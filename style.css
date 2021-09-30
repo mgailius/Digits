@@ -1,0 +1,718 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    height: 95vh;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F2F9FF 79.17%);
+    text-align: center;
+    margin-bottom: 230px;
+}
+
+nav {
+    color: #1E266D;
+    font-weight: 500;
+    padding: 20px 0;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 1180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.menu {
+    display: none;
+    width: 20px;
+    cursor: pointer;
+}
+
+.dropdown::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    transform: rotate(90deg);
+    background: url('img/arrow-down.svg');
+    margin-left: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.navLeft {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-right: 80px;
+    cursor: pointer;
+}
+
+.navLeft ul {
+    display: flex;
+}
+
+.navLeft ul li{
+    margin-right: 40px;
+    cursor: pointer;
+}
+
+.navRight {
+    display: flex;
+    align-items: center;
+}
+
+.navButton {
+    color: #fff;
+    background: #3751FF;
+    padding: 17px 20px;
+    margin-left: 40px;
+    border-radius: 100px;
+}
+
+header h1 {
+    max-width: 600px;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 105%;
+    text-align: center;
+    margin: 144px auto 0;
+    color: #1E266D;
+}
+
+header > p {
+    margin-top: 27px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #455880;
+}
+
+.headerButtons {
+    margin-top: 30px;
+}
+
+.buyButton {
+    background: #3751FF;
+    padding: 17px 40px;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 40px;
+    margin-right: 10px;
+}
+
+.buyButton, .featuresButton, .navButton {
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.buyButton:hover, .featuresButton:hover, .navButton:hover {
+    transform: translateY(-2px);
+}
+
+.buyButton:active, .featuresButton:active, .navButton:active {
+    transform: scale(0.95);
+}
+
+.featuresButton {
+    font-weight: 500;
+    color: #455880;
+    display: inline-block;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.05);
+    border-radius: 40px;
+    padding: 17px 40px;
+    margin-left: 10px;
+}
+
+.headerIllustration {
+    margin-top: 30px;
+    max-width: 970px;
+    width: 90%;
+}
+
+/* LOGO SECTION */
+
+.logos {
+    flex-direction: column;
+}
+
+.logos > p {
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+    color: rgba(69, 88, 128, 0.5);
+    font-size: 16px;
+}
+
+/* .logoContainer {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.logoContainer {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 80px;
+    grid-template-rows: auto;
+}
+
+/* ABOUT SECTION */
+
+.about {
+    margin-top: 160px;
+}
+
+.about-wrapper {
+    margin-top: 130px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.aboutIllustration {
+    width: 50%;
+    max-width: 574px;
+    margin-top: -80px;
+    margin-left: -50px;
+}
+
+.aboutCards {
+    max-width: 420px;
+    width: 50%;
+}
+
+.aboutIcon {
+    margin-right: 45px;
+}
+
+.aboutInfoHeadline {
+    font-weight: 500;
+    font-size: 22px;
+    color: #1E266D;
+}
+
+.aboutInfoDescription {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    color: #455880;
+}
+
+.aboutCard {
+    align-items: flex-start;
+    display: flex;
+}
+
+.aboutCard:first-child {
+    padding-bottom: 40px;
+}
+
+.aboutCard:nth-child(2) {
+    padding: 40px 0;
+    border-top: 1px solid rgba(69, 88, 128, 0.2);
+    border-bottom: 1px solid rgba(69, 88, 128, 0.2);
+}
+
+.aboutCard:last-child {
+    padding-top: 40px;
+}
+
+.about h2 {
+    margin: 0 auto;
+    max-width: 550px;
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+    color: #1E266D;
+    line-height: 60px;
+}
+
+/* PORTFOLIO SECTION */
+
+.portfolio {
+    margin-top: 150px;
+    background-image: url('img/portfolio-illustration.png');
+    background-color: #FFF9EA;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    text-align: center;
+}
+
+.portfolio h2 {
+    padding-top: 140px;
+    font-weight: 600;
+    font-size: 48px;
+    text-align: center;
+    color: #1E266D;
+}
+
+.portfolioDescription {
+    margin-top: 60px;
+    font-weight: normal;
+    font-size: 21px;
+    line-height: 150%;
+    text-align: center;
+    color: #455880;
+}
+
+.portfolio .buyButton {
+    margin-top: 40px;
+    margin-bottom: 600px;
+}
+
+/* TESTIMONIALS SECTION */
+
+.testimonials h2 {
+    margin-top: 250px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 48px;
+    color: #1E266D;
+}
+
+.testimonialsCards {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    grid-template-rows: auto;
+}
+
+.testimonialsCard {
+    border-radius: 5px;
+    text-align: center;
+    padding: 40px;
+    border: 1px solid rgba(69, 88, 128, 0.2);
+}
+
+.testimonialsHeadline {
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 22px;
+    color: #1E266D;
+}
+
+.testimonialsUrl {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #455880;
+}
+
+.testimonialsDescription {
+    text-align: left;
+    margin-top: 40px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 180%;
+    color: #455880;
+}
+
+/* CTA SECTION */
+
+.cta {
+    margin-top: 150px;
+    padding: 100px 0;
+    background-color: #3751FF;
+}
+
+.cta h3 {
+    max-width: 450px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+}
+
+.ctaRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.emailButton {
+    font-weight: 500;
+    font-size: 18px;
+    color: #455880;
+    max-width: 260px;
+    background-color: #fff;
+    padding: 20px 40px 20px 60px;
+    background-image: url('img/email-icon.svg');
+    background-position: center left 20px;
+    background-repeat: no-repeat;
+    text-align: center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.ctaP {
+    margin-top: 20px;
+    font-weight: normal;
+    font-size: 16px;
+    color: #DFE0EB;
+}
+
+.orangeText {
+    color: #FED385;
+    cursor: pointer;
+}
+
+/* FOOTER */ 
+
+.footer-wrapper {
+    padding: 100px 0;
+    flex-direction: column;
+}
+
+.footerTop {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    padding-bottom: 80px;
+    border-bottom: 1px solid rgba(135, 146, 161, 0.1);
+}
+
+.footerInfo h4 {
+    line-height: 23px;
+    font-weight: 600;
+    font-size: 22px;
+    color: #1E266D;
+}
+
+.footerInfo ul {
+    margin-top: 20px;
+}
+
+.footerInfo ul li {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 225%;
+    color: #455880;
+    cursor: pointer;
+}
+.companyInfo {
+    margin-top: 20px;
+    max-width: 300px;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 145%;
+    color: #455880;
+}
+
+.socialLinks {
+    min-width: 170px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.socialLinks img{
+    cursor: pointer;
+}
+
+.socialLinks img:first-child{
+    margin-left: 1px;
+}
+
+.footerBottom {
+    width: 100%;
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 14px;
+    color: rgba(69, 88, 128, 0.5);
+    cursor: pointer;
+}
+
+.footerBottom ul{
+    display: flex;
+}
+
+.footerBottom ul li {
+    font-weight: normal;
+    font-size: 14px;
+    color: #455880;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* MEDIA */
+
+@media screen and (max-width: 1245px) {
+    .about-wrapper {
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .aboutIllustration {
+        margin: 0;
+        order: 2;
+    }
+
+    .logoOut {
+        display: none;
+    }
+
+    .logoContainer {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 80px;
+        grid-template-rows: auto auto;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .menu {
+        display: block;
+    }
+
+    header {
+        margin-bottom: 100px;
+    }
+
+    header h1 {
+        margin-top: 60px;
+    }
+
+    .navLeft ul, .navRight {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .portfolio .buyButton {
+        margin-bottom: 40px;
+    }
+
+    .portfolioDescription {
+        margin: 40px auto 0;
+    }
+
+    .portfolio {
+        margin-top: 80px;
+        background-image: none;
+    }
+
+    .portfolio h2 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .about-wrapper {
+        margin-top: 80px;
+    }
+
+    .about {
+        margin-top: 80px;
+    }
+
+    .about h2{
+        font-size: 38px;
+    }
+
+    .footer-wrapper {
+        padding: 20px 0;
+    }
+
+    .footerBottom {
+        padding: 0;
+    }
+
+    .footerTop {
+        display: none;
+    }
+
+    .about-wrapper {
+        justify-content: center;
+    }
+
+    .aboutCards {
+        width: 70%;
+        max-width: 70%;
+    }
+
+    .aboutIllustration {
+        display: none;
+    }
+
+    .logoOut {
+        display: none;
+    }
+
+    .logoContainer {
+        margin-top: 50px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 80px;
+        grid-template-rows: auto auto;
+        justify-items: center;
+    }
+
+    .testimonials h2 {
+        font-size: 38px;
+        margin: 60px 0;
+    }
+
+    .portfolio h2 {
+        padding-top: 60px;
+        font-weight: 600;
+        font-size: 38px;
+        width: 90%;
+    }
+
+    .portfolioDescription {
+        font-size: 20px;
+        margin-top: 40px;
+        width: 90%;
+    }
+
+    .testimonialsCards {
+        margin: 0 auto;
+        max-width: 620px;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta {
+        margin-top: 60px;
+    }
+
+    .cta-wrapper {
+        flex-direction: column;
+    }
+
+    .ctaRight {
+        margin-top: 30px;
+        align-items: center;
+    }
+
+    .cta {
+        text-align: center;
+    }
+
+    .cta h3 {
+        max-width: 100%;
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 880px) {
+    header {
+        height: 80vh;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    header {
+        height: 60vh;
+        margin-bottom: 150px;
+    }
+
+    header h1 {
+        width: 95%;
+        font-size: 38px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .footerBottom > ul {
+        display: none;
+    }
+
+    .logoContainer {
+        grid-gap: 50px;
+    }
+
+@media screen and (max-width: 450px) {
+    header {
+        height: auto;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+    }
+
+    .headerIllustration {
+        display: none;
+    }
+
+    .cta h3 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .portfolioDescription {
+        width: 70%;
+        font-size: 16px;
+        text-align: left;
+    }
+
+    .testimonialsCard {
+        padding: 20px;
+    }
+    .testimonials h2 {
+        font-size: 24px;
+    }
+
+    .testimonialsHeadline {
+        font-size: 16px;
+    }
+
+    .testimonialsDescription {
+        font-size: 16px;
+    }
+
+    .about h2 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .portfolio h2 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .aboutCard > img {
+        display: none;
+    }
+
+    .logoContainer {
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+
+    header h1 {
+        max-width: 315px;
+        font-size: 28px;
+    }
+
+    header p {
+        margin: 40px auto 0;
+        width: 90%;
+        font-size: 16px;
+    }
+    
+    .buyButton, .featuresButton {
+        margin: 20px 0 0 0;
+        max-width: 220px;
+        width: 90%;
+    }
+}
